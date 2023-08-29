@@ -1,0 +1,100 @@
+body {
+    background-color: #1b1c1e;
+    margin: 0;
+}
+#calculator-holder {
+    margin: auto;
+    margin-top: 20vh;
+    width: 20vw;
+    height: 60vh;
+    background-color: #232425;
+    border: 1px #5e5e5e solid;
+    border-radius: 4px;
+}
+#input {
+    margin-top: 25px;
+    text-align: right;
+    margin-right: 25px;
+    color: #fff;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+}
+.line {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px #5e5e5e solid;
+}
+#number-holder {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#number-holder button {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #323335;
+    border: none;
+    border-radius: 8px;
+    margin-left: 2px;
+    margin-top: 2px;
+    color: #fff;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+#mod-holder {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1;
+}
+#mod-holder button {
+    padding-left: -10px;
+    padding-right: -10px;
+    background-color: #323335;
+    border: none;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-top: 2px;
+    color: #fff;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+#useless-button {
+    border: none;
+    opacity: 0;
+}
+
+@media (max-width: 1350px) {
+    #calculator-holder {
+        width: 50vw;
+    }
+}
+@media (max-width: 550px) {
+    #number-holder button {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #calculator-holder {
+        margin-top: 5vh;
+        height: 80vh;
+    }
+}
+@media (max-height: 900px) {
+    #calculator-holder {
+        margin-top: 5vh;
+        height: 80vh;
+    }
+}
